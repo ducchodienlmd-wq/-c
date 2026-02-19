@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumière Living | Nội thất cao cấp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">Lumière Living</div>
+        <nav class="nav" aria-label="Điều hướng chính">
+          <a href="#collections">Bộ sưu tập</a>
+          <a href="#products">Sản phẩm</a>
+          <a href="#about">Giới thiệu</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+        <button class="cart-btn" id="cartButton" aria-label="Giỏ hàng">
+          Giỏ hàng <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Không gian sống đẳng cấp</p>
+          <h1>Nội thất sang trọng, tối ưu trải nghiệm mua sắm</h1>
+          <p>
+            Khám phá những thiết kế hiện đại lấy cảm hứng từ các showroom nội thất
+            hàng đầu thế giới. Mua nhanh, giao tận nơi, hỗ trợ tư vấn 24/7.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Mua ngay</a>
+            <a class="btn btn-secondary" href="#collections">Xem bộ sưu tập</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="collections section">
+        <div class="container">
+          <h2>Bộ sưu tập nổi bật</h2>
+          <div class="collection-grid">
+            <article>
+              <h3>Luxury Living Room</h3>
+              <p>Sofa Ý, bàn trà đá cẩm thạch và ánh sáng tinh tế.</p>
+            </article>
+            <article>
+              <h3>Premium Bedroom</h3>
+              <p>Giường gỗ óc chó, tủ tích hợp thông minh, tối đa tiện nghi.</p>
+            </article>
+            <article>
+              <h3>Modern Workspace</h3>
+              <p>Không gian làm việc chuyên nghiệp cho doanh nhân hiện đại.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Sản phẩm bán chạy</h2>
+            <p>Chọn sản phẩm bạn yêu thích và thêm vào giỏ ngay.</p>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section class="trust section">
+        <div class="container trust-grid">
+          <div>
+            <h3>Vận chuyển toàn quốc</h3>
+            <p>Miễn phí giao hàng cho đơn từ 20 triệu đồng.</p>
+          </div>
+          <div>
+            <h3>Bảo hành chính hãng</h3>
+            <p>Bảo hành kết cấu lên đến 5 năm, đổi trả 14 ngày.</p>
+          </div>
+          <div>
+            <h3>Thanh toán linh hoạt</h3>
+            <p>Hỗ trợ chuyển khoản, thẻ quốc tế và trả góp 0%.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Lumière Living</h4>
+          <p>Showroom: 88 Nguyễn Huệ, Quận 1, TP.HCM</p>
+        </div>
+        <div>
+          <h4>Hotline</h4>
+          <p>1900 6868</p>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <p>hello@lumiere-living.vn</p>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Giỏ hàng của bạn</h3>
+        <button id="closeCart" aria-label="Đóng">✕</button>
+      </div>
+      <ul id="cartItems"></ul>
+      <div class="cart-footer">
+        <p>Tổng cộng: <strong id="cartTotal">0 ₫</strong></p>
+        <button class="btn btn-primary full">Thanh toán ngay</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
