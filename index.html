@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxeLiving | Nội thất cao cấp cho không gian sống hiện đại</title>
+    <meta
+      name="description"
+      content="LuxeLiving - Cửa hàng nội thất cao cấp với sofa, bàn ăn, đèn trang trí, và giải pháp trọn gói cho căn hộ sang trọng."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#">LuxeLiving</a>
+        <nav>
+          <a href="#catalog">Sản phẩm</a>
+          <a href="#projects">Dự án</a>
+          <a href="#reviews">Đánh giá</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+        <button id="cartBtn" class="cart-btn" aria-label="Mở giỏ hàng">
+          🛒 <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="badge">BỘ SƯU TẬP 2026</p>
+            <h1>Biến không gian sống thành biểu tượng phong cách</h1>
+            <p>
+              Thiết kế tinh tế, chất liệu cao cấp, tối ưu công năng. Mua sắm nội thất
+              chính hãng với bảo hành 5 năm.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#catalog">Mua ngay</a>
+              <a class="btn ghost" href="#projects">Xem dự án mẫu</a>
+            </div>
+            <div class="stats">
+              <div><strong>20k+</strong><span>Khách hàng hài lòng</span></div>
+              <div><strong>1.2k</strong><span>Sản phẩm cao cấp</span></div>
+              <div><strong>48h</strong><span>Giao hàng nội thành</span></div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80"
+              alt="Phòng khách nội thất cao cấp"
+            />
+            <div class="floating">
+              <p>Sofa da Ý Florence</p>
+              <strong>45.900.000đ</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog" class="section container">
+        <div class="section-head">
+          <h2>Sản phẩm nổi bật</h2>
+          <div class="filters" id="filters"></div>
+        </div>
+        <div class="products" id="products"></div>
+      </section>
+
+      <section id="projects" class="section showcase">
+        <div class="container showcase-grid">
+          <div>
+            <h2>Không chỉ bán hàng, chúng tôi kiến tạo trải nghiệm sống</h2>
+            <p>
+              Đội ngũ thiết kế của LuxeLiving cung cấp giải pháp từ tư vấn, mô phỏng 3D
+              đến thi công hoàn thiện giúp bạn sở hữu không gian chuẩn resort tại gia.
+            </p>
+            <ul>
+              <li>Tư vấn phong cách theo ngân sách</li>
+              <li>Thiết kế 3D miễn phí khi đặt combo</li>
+              <li>Hỗ trợ trả góp 0% qua thẻ tín dụng</li>
+            </ul>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80"
+            alt="Dự án nội thất phòng ngủ"
+          />
+        </div>
+      </section>
+
+      <section id="reviews" class="section container">
+        <h2>Khách hàng nói gì về LuxeLiving</h2>
+        <div class="reviews">
+          <article>
+            <p>“Chất lượng vượt kỳ vọng, sofa cực êm và giao hàng rất chuyên nghiệp.”</p>
+            <strong>— Minh Anh, Quận 2</strong>
+          </article>
+          <article>
+            <p>“Website dễ dùng, đặt hàng nhanh, tư vấn nhiệt tình như các brand lớn.”</p>
+            <strong>— Hoàng Nam, Hà Nội</strong>
+          </article>
+          <article>
+            <p>“Mình mua combo phòng khách, giá tốt và bảo hành rõ ràng.”</p>
+            <strong>— Thảo Vy, Đà Nẵng</strong>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Giỏ hàng của bạn</h3>
+        <button id="closeCart" aria-label="Đóng giỏ hàng">✕</button>
+      </div>
+      <ul id="cartItems"></ul>
+      <div class="cart-footer">
+        <p>Tạm tính: <strong id="cartTotal">0đ</strong></p>
+        <button class="btn primary full">Thanh toán ngay</button>
+      </div>
+    </aside>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>LuxeLiving</h3>
+          <p>Showroom: 88 Nguyễn Hữu Cảnh, Bình Thạnh, TP.HCM</p>
+          <p>Hotline: 0909 888 999</p>
+        </div>
+        <form class="newsletter">
+          <label for="email">Nhận ưu đãi độc quyền</label>
+          <div>
+            <input id="email" type="email" placeholder="Nhập email của bạn" required />
+            <button class="btn primary" type="submit">Đăng ký</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
