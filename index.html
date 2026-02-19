@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxeHome | Nội thất cao cấp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="#">LuxeHome</a>
+        <nav class="nav">
+          <a href="#products">Sản phẩm</a>
+          <a href="#collections">Bộ sưu tập</a>
+          <a href="#about">Về chúng tôi</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+        <button class="btn btn-outline">Đăng nhập</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">NỘI THẤT THƯỢNG LƯU</p>
+          <h1>Nâng tầm không gian sống với thiết kế sang trọng và tiện nghi.</h1>
+          <p class="subtitle">Khám phá hàng trăm sản phẩm nội thất cao cấp, chính hãng, giao nhanh toàn quốc.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Mua ngay</a>
+            <a href="#collections" class="btn btn-ghost">Xem bộ sưu tập</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="section">
+        <div class="container">
+          <h2 class="section-title">Bộ sưu tập nổi bật</h2>
+          <div class="collections-grid">
+            <article class="collection-card large">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Phòng khách hiện đại" />
+              <div class="collection-info"><h3>Phòng khách hiện đại</h3><span>98 sản phẩm</span></div>
+            </article>
+            <article class="collection-card">
+              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Bếp tinh tế" />
+              <div class="collection-info"><h3>Bếp tinh tế</h3><span>53 sản phẩm</span></div>
+            </article>
+            <article class="collection-card">
+              <img src="https://images.unsplash.com/photo-1617104551722-3b2d513664be?auto=format&fit=crop&w=900&q=80" alt="Phòng ngủ cao cấp" />
+              <div class="collection-info"><h3>Phòng ngủ cao cấp</h3><span>72 sản phẩm</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section alt">
+        <div class="container">
+          <div class="head-row">
+            <h2 class="section-title">Sản phẩm bán chạy</h2>
+            <div class="filters">
+              <button class="chip active" data-filter="all">Tất cả</button>
+              <button class="chip" data-filter="sofa">Sofa</button>
+              <button class="chip" data-filter="table">Bàn</button>
+              <button class="chip" data-filter="chair">Ghế</button>
+            </div>
+          </div>
+          <div class="products-grid" id="productsGrid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <h2 class="section-title">Tại sao chọn LuxeHome?</h2>
+            <ul class="feature-list">
+              <li>Thiết kế chuẩn châu Âu, vật liệu cao cấp.</li>
+              <li>Miễn phí tư vấn phối cảnh 3D theo nhu cầu.</li>
+              <li>Bảo hành lên đến 5 năm, hỗ trợ tận tâm.</li>
+              <li>Đặt hàng nhanh, thanh toán linh hoạt.</li>
+            </ul>
+          </div>
+          <div class="stats-card">
+            <div><strong>12K+</strong><span>Khách hàng hài lòng</span></div>
+            <div><strong>500+</strong><span>Sản phẩm cao cấp</span></div>
+            <div><strong>63</strong><span>Tỉnh thành giao hàng</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>LuxeHome</h3>
+          <p>Showroom: 88 Nguyễn Huệ, Quận 1, TP.HCM</p>
+          <p>Hotline: 1900 6868</p>
+        </div>
+        <form class="newsletter">
+          <label for="email">Nhận ưu đãi độc quyền</label>
+          <div>
+            <input id="email" type="email" placeholder="Nhập email của bạn" required />
+            <button class="btn btn-primary" type="submit">Đăng ký</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
