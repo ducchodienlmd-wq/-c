@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxeHome — Nội thất cao cấp</title>
+  <meta name="description" content="LuxeHome - Trang bán nội thất cao cấp với trải nghiệm mua sắm hiện đại, tiện lợi và sang trọng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#">LuxeHome</a>
+      <nav>
+        <a href="#products">Sản phẩm</a>
+        <a href="#collections">Bộ sưu tập</a>
+        <a href="#about">Về chúng tôi</a>
+      </nav>
+      <button id="cart-btn" class="cart-btn" aria-label="Mở giỏ hàng">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="badge">Nội thất chuẩn sống thượng lưu</p>
+          <h1>Biến ngôi nhà thành không gian nghệ thuật</h1>
+          <p class="subtitle">
+            Khám phá bộ sưu tập sofa, bàn ăn, đèn trang trí và decor cao cấp với thiết kế tinh tế, tối ưu công năng.
+          </p>
+          <a class="cta" href="#products">Mua ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h3>Miễn phí giao hàng</h3>
+        <p>Áp dụng đơn từ 5.000.000đ trên toàn quốc.</p>
+      </article>
+      <article>
+        <h3>Đổi trả 30 ngày</h3>
+        <p>Bảo đảm trải nghiệm mua sắm an tâm tuyệt đối.</p>
+      </article>
+      <article>
+        <h3>Bảo hành 5 năm</h3>
+        <p>Cam kết chất lượng vật liệu và độ bền cao cấp.</p>
+      </article>
+    </section>
+
+    <section id="collections" class="container collections">
+      <h2>Bộ sưu tập nổi bật</h2>
+      <div class="collection-grid">
+        <div class="card large">Modern Luxe</div>
+        <div class="card">Scandinavian Calm</div>
+        <div class="card">Neo Classic</div>
+      </div>
+    </section>
+
+    <section id="products" class="container products-section">
+      <div class="products-head">
+        <h2>Sản phẩm bán chạy</h2>
+        <div class="controls">
+          <input id="search" type="text" placeholder="Tìm sofa, bàn, đèn..." />
+          <select id="category-filter">
+            <option value="all">Tất cả danh mục</option>
+            <option value="Sofa">Sofa</option>
+            <option value="Bàn">Bàn</option>
+            <option value="Ghế">Ghế</option>
+            <option value="Đèn">Đèn</option>
+            <option value="Decor">Decor</option>
+          </select>
+        </div>
+      </div>
+      <div id="products-grid" class="products-grid"></div>
+    </section>
+
+    <section id="about" class="container about">
+      <div>
+        <h2>Vì sao khách hàng chọn LuxeHome?</h2>
+        <p>
+          Chúng tôi kết hợp giữa mỹ học đương đại và tiện nghi sử dụng hàng ngày. Mỗi sản phẩm đều được tuyển chọn kỹ lưỡng,
+          chú trọng độ hoàn thiện và trải nghiệm lâu dài.
+        </p>
+      </div>
+      <ul>
+        <li>✔️ Tư vấn phối cảnh theo diện tích thực tế.</li>
+        <li>✔️ Nhiều phương thức thanh toán linh hoạt.</li>
+        <li>✔️ Hỗ trợ lắp đặt tận nơi chuyên nghiệp.</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Giỏ hàng của bạn</h3>
+      <button id="close-cart">✕</button>
+    </div>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <p>Tạm tính: <strong id="cart-total">0đ</strong></p>
+      <button class="checkout">Thanh toán</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay" hidden></div>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 LuxeHome. Thiết kế không gian sống đẳng cấp.</p>
+      <p>Hotline: 1900 6868</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
