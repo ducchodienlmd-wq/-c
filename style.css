@@ -1,0 +1,268 @@
+:root {
+  --bg: #f8f5f0;
+  --gold: #c7a66b;
+  --text: #1d1d1f;
+  --muted: #5a5f68;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(20, 20, 22, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid #777;
+  color: #fff;
+}
+
+.hero {
+  min-height: 78vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(9, 9, 10, 0.75), rgba(9, 9, 10, 0.25));
+}
+
+.hero-content {
+  position: relative;
+  color: var(--white);
+  max-width: 640px;
+}
+
+.kicker {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  margin: 0.4rem 0 1rem;
+}
+
+.hero p {
+  color: #efe8de;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.primary {
+  background: linear-gradient(135deg, #d9bc82, #b98d47);
+}
+
+.light {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.section-head a {
+  color: #85663c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.categories {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(40, 30, 20, 0.09);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.luxury-bg {
+  background: radial-gradient(circle at top, #f7ecdc, #f8f5f0 55%);
+}
+
+.search-box input {
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  min-width: 250px;
+}
+
+.products {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.product {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(30, 20, 10, 0.08);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 0.8rem 0 0.4rem;
+}
+
+.price {
+  color: #85663c;
+  font-weight: 700;
+}
+
+.product button {
+  margin-top: 0.8rem;
+  width: 100%;
+  background: #1f1f22;
+  color: #fff;
+}
+
+.reviews {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+blockquote {
+  margin: 0;
+  background: #fff;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  padding: 1rem;
+  color: #404651;
+  line-height: 1.6;
+}
+
+cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-style: normal;
+  color: #7a7f88;
+  font-weight: 600;
+}
+
+footer {
+  background: #161618;
+  color: #f0efe9;
+  padding: 2rem 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: 68vh;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
